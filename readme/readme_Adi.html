@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../home.css">
+  <title>Adi's Read Me</title>
+  <link rel="icon" href="../images/siteIcon.png" type="image/icon type">
+</head>
+
+<body>
+<div class="header">
+  <div class="menu">
+    <div class="dropdown">
+      <div class="menuItem" id="newInBtn">New In
+        <div class="dropdown-content">
+          <a id="headerAllCat">All Categories</a>
+        </div>
+      </div>
+    </div>
+    <div class="dropdown">
+      <div class="menuItem" id="clothingBtn">Clothing
+        <div class="dropdown-content">
+          <a id="headerTops" href="../productsPages/productsPage_Tops.html">Tops</a>
+          <a id="headerBras" href="../productsPages/productsPage_Bras.html">Bras</a>
+          <a id="headerBottoms" href="../productsPages/productsPage_Bottoms.html">Bottoms</a>
+        </div>
+      </div>
+    </div>
+    <div class="dropdown">
+      <div class="menuItem" id="essentialsBtn">Essentials
+        <div class="dropdown-content">
+          <a id="headerMats" href="../productsPages/productsPage_Mats.html">Yoga Mats</a>
+          <a id="headerBlocks" href="../productsPages/productsPage_Blocks.html">Yoga Blocks</a>
+          <a id="headerBags" href="../productsPages/productsPage_Bags.html">Bags</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <img src="../images/Logo1.png" id="MainLogo" onclick="location.href='../homePage/homePage.html';">
+
+  <div class="headerIcons">
+    <div class="headerBtn" id="searchBtn" >
+      <img src="../images/searchIcon.png">
+      <p>Search</p>
+    </div>
+    <div class="headerBtn" id="logInBtn" href="../usersLoginPages/loginPage.html">
+      <img src="../images/logInIcon.png">
+      <p>Log In</p>
+      <div class="dropdown-content">
+        <a id="logOutBtn">Log Out</a>
+      </div>
+    </div>
+    <div class="headerBtn" id="myBagBtn" href="../myBagPage.html">
+      <img src="../images/myBagIcon.png">
+      <p>My Bag</p>
+    </div>
+  </div>
+</div>
+<div class="searchBar" id="searchBar">
+  <form>
+    <input class="searchInput" placeholder="Search an item here" type="search" value="" id="search">
+  </form>
+</div>
+
+<br><br><br><br><br><br><br><br>
+<h2>Adi Ben Shemen</h2><br>
+<div class="readmeContainer">
+  <p>Store name: Yogis Outfitters<br><br>
+    What are we selling: Yoga clothes and essentials<br><br>
+    Additional pages we added to our online store:<br><br>
+    1. About Us - telling about our brand.<br><br>
+    2. Help - FAQ (frequently asked questions) about our store.<br><br>
+    3. Contact Us - let users tell us what they think about our online store, contact with our team if they need and we can get back to them by email.<br><br>
+    4. Products pages - we added a page for each product in our store, showing it’s name, description, price, available sizes and add to bag button, together with amount of pieces to choose.<br><br>
+    What was hard to do? <br><br>
+    At first, it was hard for me to imagine how I want the store to look like. We spent a lot of time designing the front of our website until we found a concept we liked and started working on the backend.
+    It took me a day or two to get into it and understand how the whole thing works. I learned properly how to send requests to the server and how to get the responses I want, how to work with JSON, how to
+    collaborate the front and back and create pages dynamically, which was difficult but also pretty amazing because I wasn’t familiar with this way of work before. It was hard sometimes to debug or to find
+    out why things that worked already stopped working. I think nothing was easy in this project, but once I understood what I want to do and how I can get it, things started moving fast and I really enjoyed
+    working on this project.<br><br>
+    My partner was Tal Barak 302281480.<br>
+    We met up a few times a week and worked together on the project. Tal helped me understand how to make the server and client communicate with each other and how to work with files. On the other hand,
+    when Tal got stuck with the front, I could help her back with that. Throughout the work we divided little tasks between us and merged our work after every few tasks have completed, so that we both got to
+    touch every part of the project. I think we were a great team and I’m proud of us and our work.<br><br>
+    The different routes our app supports:<br><br>
+    1. Register - create an account to our app.<br><br>
+    2. Login - to start shopping in our store.<br><br>
+    3. Log out<br><br>
+    4. Subscribe - to receive exclusive promotions, private sales and news.<br><br>
+    5. Contact - leave us a message with user’s name and email to return.<br><br>
+    6. Search - to easily find items in store and create results page dynamically.<br><br>
+    7. Access My Bag and Checkout pages only when a user is logged in.<br><br>
+    8. Add item to bag - My Bag page is updating dynamically.<br><br>
+    9. Remove item from bag - My Bag page is updating dynamically.<br><br>
+    10. Change amount of product pieces in bag - My Bag page is updating dynamically.<br><br>
+    11. Fill in shipping details - in checkout page.<br><br>
+    12. Place new order - My Bag page is updating automatically to empty.<br><br>
+    13. Admin menu page - access only when an admin user is logged in.<br><br>
+    14. Admin page - remove an item by its name.<br><br>
+    15. Admin page - search users by username to see user’s details.<br><br>
+    16. Admin page - add new item to the store.<br><br>
+    17. Products page is updating dynamically after adding new item<br><br>
+    18. Single product page is created dynamically after adding new item.<br><br>
+
+
+
+
+  </p>
+</div>
+
+<div class="footer">
+  <div class="footerInfo">
+    <p>Receive exclusive promotions, private sales and news</p>
+    <input type="email" placeholder="Email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$" required>
+  </div>
+  <div class="subscribeBtn">
+    <button type="button" class="footerSubscription" id=footerSubscriptionBtn>Subscribe</button>
+  </div>
+
+  <div class="footerBtns">
+    <a class="footerItem" id="footerAboutUsBtn" href="../footerPages/aboutUsPage.html">About Us</a>
+    <a class="footerItem" id="footerHelpBtn" href="../footerPages/helpPage.html">Help</a>
+    <a class="footerItem" id="footerContactBtn" href="../footerPages/contactPage.html">Contact</a>
+  </div>
+</div>
+</body>
+<script src="../homePage/homePage.js"></script>
+<script src="../searchPage/searchPage.js"></script>
+<script src="../shoppingBag/shoppingBag.js"></script>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../home.css">
+  <title>Yogis Outfitters</title>
+  <link rel="icon" href="../images/siteIcon.png" type="image/icon type">
+</head>
+
+<body>
+
+<div id="loader" class="loaderScreen">
+  <img src="../images/storeLogo.png">
+</div>
+
+  <div class="header">
+    <div class="menu">
+      <div class="dropdown">
+        <div class="menuItem" id="newInBtn">New In
+          <div class="dropdown-content">
+            <a id="headerAllCat">All Categories</a>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown">
+        <div class="menuItem" id="clothingBtn">Clothing
+          <div class="dropdown-content">
+            <a id="headerTops">Tops</a>
+            <a id="headerBras">Bras</a>
+            <a id="headerBottoms">Bottoms</a>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown">
+        <div class="menuItem" id="essentialsBtn">Essentials
+          <div class="dropdown-content">
+            <a id="headerMats">Yoga Mats</a>
+            <a id="headerBlocks">Yoga Blocks</a>
+            <a id="headerBags">Bags</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <img src="../images/Logo1.png" id="MainLogo" onclick="location.href='./homePage.html';">
+
+    <div class="headerIcons">
+      <div class="headerBtn" id="searchBtn">
+        <img src="../images/searchIcon.png" class="icon-search">
+        <p>Search</p>
+      </div>
+        <div class="headerBtn" id="logInBtn">
+          <img src="../images/logInIcon.png">
+          <p>Log In</p>
+          <div class="dropdown-content">
+            <a id="headerLogOut">Log Out</a>
+          </div>
+        </div>
+      <div class="headerBtn" id="myBagBtn">
+        <img src="../images/myBagIcon.png">
+        <p>My Bag</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="searchBar" id="searchBar">
+    <form>
+      <input class="searchInput" placeholder="Search an item here" type="search" value="" id="search">
+     <!-- <input class="search-submit" type="submit" value=""> -->
+    </form>
+  </div>
+
+  <div class="homePageContainer">
+    <div class="mainHomePageImg" id="mainHomePageImg">
+      <img id="mainImage" src="../images/yoga9.jpeg">
+      <div class="mainCaptureHomePage">It's a way of life</div>
+      <button id="maimHomePageImgBtn">Discover More</button>
+    </div>
+
+    <div class="topCategorizedPhotos">
+      <div class="leftPic">
+        <img id="clothesImage" src="../images/yogaPantsCC.jpeg">
+        <button id="leftTopImgHomeBtn">Bottoms</button>
+      </div>
+      <div class="rightPic">
+        <img id="essentialsImage" src="../images/yoga10CC.jpeg">
+        <button id="rightTopImgHomeBtn">Mats</button>
+      </div>
+    </div>
+
+    <div class="newInContainer">
+      <h2>New In</h2>
+      <div class="newInImages">
+        <img src="../images/tops8.webp" class="homeNewIn">
+        <img src="../images/bottoms4.webp" class="homeNewIn">
+        <img src="../images/bras2a.webp" class="homeNewIn">
+        <img src="../images/bras8c.webp" class="homeNewIn">
+      </div>
+    </div>
+
+    <div class="bottomCategorizedPhotos">
+      <div class="leftPic">
+        <img src="../images/bagforhomepage.jpeg" id="yogaBags">
+        <button id="leftBottomImgHomeBtn">Bags</button>
+      </div>
+      <div class="rightPic">
+        <img src="../images/yogaBlock1.jpeg" id="yogaBlock">
+        <button id="rightBottomImgHomeBtn">Blocks</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footerInfo">
+      <p>Receive exclusive promotions, private sales and news</p>
+      <input type="email" placeholder="Email" name="email" id="emailSubscription" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+    </div>
+    <div class="subscribeBtn">
+      <button type="button" class="footerSubscription" id=footerSubscriptionBtn>Subscribe</button>
+    </div>
+
+    <div class="footerBtns">
+      <div class="footerItem" id="footerAboutUsBtn">About Us</div>
+      <div class="footerItem" id="footerHelpBtn">Help</div>
+      <div class="footerItem" id="footerContactBtn">Contact</div>
+    </div>
+  </div>
+</body>
+<script type="module" src="homePage.js"></script>
+<script type="module" src="../persist/persist.js"></script>
+<script type="module" src="../shoppingBag/shoppingBag.js"></script>
+<script type="module" src="../searchPage/searchPage.js"></script>
+</html>

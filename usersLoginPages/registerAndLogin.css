@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.registerImageBlock img{
+    position: absolute;
+    background-repeat: no-repeat;
+    display: inline-flex;
+    height: 100%;
+    width: 65%;
+    left: 0;
+    top: 0;
+}
+
+.registerBlockDetails {
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 33%;
+    height: 100%;
+    right: 0;
+}
+
+.registerBlockDetails h2 {
+    text-align: left;
+    width: 100%;
+    padding-top: 40px;
+    font-family: "Arial Unicode MS", sans-serif;
+    font-weight: bold;
+}
+
+.registerBlockDetails h5 {
+    text-align: left;
+    width: 100%;
+    font-family: "Arial Unicode MS", sans-serif;
+}
+
+input[type=text], input[type=email], input[type=password] {
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    width: 96%;
+    height: 30px;
+    padding-top: 10px;
+    outline: none;
+}
+
+.passwordExplanation {
+    padding-top: 8px;
+    font-family: "Arial Unicode MS", sans-serif;
+    font-size: 10px;
+}
+
+.termsOfUse {
+    padding-top: 10px;
+    font-family: "Arial Unicode MS", sans-serif;
+    font-size: 13px;
+}
+
+.termsOfUse p {
+    font-size: 13px;
+}
+
+.storeLogo img {
+    width: 120px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.registerBtn {
+    width: 95%;
+    alignment: center;
+    background-color: #747291;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: transparent;
+    margin-top: 20px;
+}
+
+.registerBtn:hover {
+    cursor: pointer;
+    border: transparent;
+    background-color: #8d8ba8;
+}
+
+.login {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-family: "Arial Unicode MS", sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+
+a {
+    color: black;
+}
+
+.rememberMeBtn {
+    font-family: "Arial Unicode MS", sans-serif;
+    font-size: 13px;
+    padding-top: 20px;
+}
+
+h5 {
+    font-weight: lighter;
+}
+
+.fieldsErrorMessage {
+    font-family: "Arial Unicode MS", sans-serif;
+    font-size: 13px;
+    color: #c00000;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+/* Popup container */
+.termsAndPrivacy {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.termsPopUp {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 12px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.termsPopUp::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.termsAndPrivacy .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}

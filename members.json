@@ -1,0 +1,44 @@
+{
+  "members": [
+    {
+      "username": "admin",
+      "email": "admin@admin.com",
+      "password": "3a960464d36c1b8bad183ed57ee79c0e39953cce",
+      "shoppingBag": [],
+      "purchases": [],
+      "loginActivity": "Logged out",
+      "cookiePassword": ""
+    },
+    {
+      "username": "adi",
+      "email": "adibenshemen@gmail.com",
+      "password": "3a960464d36c1b8bad183ed57ee79c0e39953cce",
+      "shoppingBag": [],
+      "purchases": [
+        {
+          "products": [
+            {
+              "productType": "Bags",
+              "productName": "Warrior Bag",
+              "productDescription": "Super comfortable bag for everyday yogi's life.",
+              "productPrice": "$35",
+              "productMainImage": "bags1.webp",
+              "productSubImage1": "",
+              "productSubImage2": "",
+              "productSubImage3": "",
+              "pageLink": "./singleProducts/Warrior Bag.html",
+              "productSize": "One Size",
+              "productAmount": "1"
+            }
+          ],
+          "fullName": "Adi Ben Shemen",
+          "address": "Alenby 2",
+          "country": "Israel",
+          "shipMethod": "express"
+        }
+      ],
+      "loginActivity": "Logged In",
+      "cookiePassword": "bnqcoD4aoiGerON9JMiJ"
+    }
+  ]
+}

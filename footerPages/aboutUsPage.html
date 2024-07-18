@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../home.css">
+  <title>About Us</title>
+  <link rel="icon" href="../images/siteIcon.png" type="image/icon type">
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="menu">
+      <div class="dropdown">
+        <div class="menuItem" id="newInBtn">New In
+          <div class="dropdown-content">
+            <a id="headerAllCat">All Categories</a>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown">
+        <div class="menuItem" id="clothingBtn">Clothing
+          <div class="dropdown-content">
+            <a id="headerTops">Tops</a>
+            <a id="headerBras">Bras</a>
+            <a id="headerBottoms">Bottoms</a>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown">
+        <div class="menuItem" id="essentialsBtn">Essentials
+          <div class="dropdown-content">
+            <a id="headerMats">Yoga Mats</a>
+            <a id="headerBlocks">Yoga Blocks</a>
+            <a id="headerBags">Bags</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <img src="../images/Logo1.png" id="MainLogo" onclick="location.href='../homePage/homePage.html';">
+
+    <div class="headerIcons">
+      <div class="headerBtn" id="searchBtn">
+        <img src="../images/searchIcon.png">
+        <p>Search</p>
+      </div>
+      <div class="headerBtn" id="logInBtn">
+        <img src="../images/logInIcon.png">
+        <p>Log In</p>
+        <div class="dropdown-content">
+          <a id="headerLogOut">Log Out</a>
+        </div>
+      </div>
+      <div class="headerBtn" id="myBagBtn">
+        <img src="../images/myBagIcon.png">
+        <p>My Bag</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="searchBar" id="searchBar">
+    <form>
+      <input class="searchInput" placeholder="Search an item here" type="search" value="" id="search">
+      <!-- <input class="search-submit" type="submit" value=""> -->
+    </form>
+  </div>
+
+  <div class="aboutUsContainer">
+    <h2>We Are Yogis Outfitters</h2>
+    <h3>We are relentless about making the best yoga clothing in the world explicitly to inspire yogis (and yogis to be) to have more yoga in their life. Inspiring mindful movement is at the core of why we do what we do - it’s our calling. Because mindful movement leads to better living. This is the real meaning of studio-to-street: Taking the consciousness from practice on the mat and putting it into the practice of life.<br><br>We hope you will find what you're looking for in our online store.<br><br>
+      Have a nice yogi day, and Namaste!</h3>
+  <img src="../images/aboutUsPic.jpeg">
+  </div>
+
+  <div class="footer">
+    <div class="footerInfo">
+      <p>Receive exclusive promotions, private sales and news</p>
+      <input type="email" placeholder="Email" name="email" id="emailSubscription" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+    </div>
+    <div class="subscribeBtn">
+      <button type="button" class="footerSubscription" id=footerSubscriptionBtn>Subscribe</button>
+    </div>
+
+    <div class="footerBtns">
+      <div class="footerItem" id="footerAboutUsBtn">About Us</div>
+      <div class="footerItem" id="footerHelpBtn">Help</div>
+      <div class="footerItem" id="footerContactBtn">Contact</div>
+    </div>
+  </div>
+</body>
+
+<script type="module" src="../homePage/homePage.js"></script>
+<script type="module" src="../searchPage/searchPage.js"></script>
+</html>

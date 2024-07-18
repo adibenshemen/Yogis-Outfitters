@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registerAndLogin.css">
+    <title>Yogis Outfitters</title>
+    <link rel="icon" href="../images/siteIcon.png" type="image/icon type">
+</head>
+<body>
+    <div class="registerImageBlock">
+        <img src="../images/registerImage.jpeg"/>
+    </div>
+    <div class="registerBlockDetails">
+        <div class="storeLogo"><img src="../images/storeLogo.png"/></div>
+        <h2>Create an account</h2>
+        <h5>Let's start shopping Yogis Outfitters</h5>
+        <form class="contactGrid" id="registerForm" autocomplete="off" onsubmit="return false">
+            <label for="username"><b></b></label>
+            <input type="text" placeholder="Username" name="username" id="username" minlength="2" required>
+
+            <label for="email"><b></b></label>
+            <input type="email" placeholder="Email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+
+            <label for="password"><b></b></label>
+            <input type="password" placeholder="Password (8-12 uppercase & lowercase letters and numbers)" name="psw" id="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,12}$" required>
+
+            <label for="passwordRepeat"><b></b></label>
+            <input type="password" placeholder="Repeat Password" name="passwordRepeat" id="passwordRepeat" required>
+
+            <div class="termsOfUse">
+                <p>By creating a new account in Yogis Outfitters, you agree to our</p>
+                <div class="termsAndPrivacy" id="termsOfUse"><a href="#"> Terms & Privacy.</a>
+                    <span class="termsPopUp" id="termsPopUp"></span>
+                </div>
+            </div>
+
+            <div class="fieldsErrorMessage" id="fieldsErrorMessage"></div>
+
+            <button type="submit" class="registerBtn" id="registerBtn">Create Account</button>
+        </form>
+        <div class="login">
+            <p>Already have an account? <a href="loginPage.html">Log in</a></p>
+    </div>
+    </div>
+    <script type="module" src="register.js"></script>
+    <script type="module" src="../persist/persist.js"></script>
+</body>
+</html>

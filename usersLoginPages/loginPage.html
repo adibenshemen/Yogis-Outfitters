@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registerAndLogin.css">
+    <title>Yogis Outfitters</title>
+    <link rel="icon" href="../images/siteIcon.png" type="image/icon type">
+</head>
+<body>
+<div class="registerImageBlock">
+    <img src="../images/registerImage.jpeg"/>
+</div>
+<div class="registerBlockDetails">
+    <div class="storeLogo"><img src="../images/storeLogo.png"/></div>
+    <h2>Namaste</h2>
+    <h5>Welcome back to Yogis Outfitters!</h5>
+
+    <label for="email"><b></b></label>
+    <input type="email" placeholder="Email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+
+    <label for="password"><b></b></label>
+    <input type="password" placeholder="Password" name="password" id="password" required>
+
+    <div class="rememberMeBtn">
+        <input type="checkbox" id="rememberMe">
+        <label for="rememberMe" id="rememberMeText">Remember Me</label>
+    </div>
+
+    <div class="fieldsErrorMessage" id="fieldsErrorMessage"></div>
+
+    <div class="loginBtn">
+        <button type="submit" class="registerBtn" id="logInBtn">Log in</button>
+    </div>
+
+    <div class="login">
+        <p>New yogi? <a href="registerPage.html">Create account</a></p>
+    </div>
+</div>
+<script type="module" src="login.js"></script>
+<script type="module" src="../persist/persist.js"></script>
+</body>
+</html>

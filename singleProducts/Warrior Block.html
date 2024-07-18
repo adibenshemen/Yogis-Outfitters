@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+                <head>
+                    <meta charset="UTF-8">
+                    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link rel="stylesheet" href="../home.css">
+                    <title> Warrior Block </title> 
+                    <link rel="icon" href="../images/siteIcon.png" type="image/icon type">
+                </head>
+    
+    <body>
+    <div class="header">
+        <div class="menu">
+            <div class="dropdown">
+                <div class="menuItem" id="newInBtn">New In
+                    <div class="dropdown-content">
+                        <a id="headerAllCat">All Categories</a>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class="menuItem" id="clothingBtn">Clothing
+                    <div class="dropdown-content">
+                        <a id="headerTops" href="../productsPages/productsPage_Tops.html">Tops</a>
+                        <a id="headerBras" href="../productsPages/productsPage_Bras.html">Bras</a>
+                        <a id="headerBottoms" href="../productsPages/productsPage_Bottoms.html">Bottoms</a>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class="menuItem" id="essentialsBtn">Essentials
+                    <div class="dropdown-content">
+                        <a id="headerMats" href="../productsPages/productsPage_Mats.html">Yoga Mats</a>
+                        <a id="headerBlocks" href="../productsPages/productsPage_Blocks.html">Yoga Blocks</a>
+                        <a id="headerBags" href="../productsPages/productsPage_Bags.html">Bags</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <img src="../images/Logo1.png" id="MainLogo" onclick="location.href='../homePage/homePage.html';">
+    
+        <div class="headerIcons">
+            <div class="headerBtn" id="searchBtn" >
+                <img src="../images/searchIcon.png">
+                <p>Search</p>
+            </div>
+            <div class="headerBtn" id="logInBtn" >
+                <img src="../images/logInIcon.png">
+                <p>Log In</p>
+                <div class="dropdown-content">
+                    <a id="headerLogOut">Log Out</a>
+                </div>
+            </div>
+            <div class="headerBtn" id="myBagBtn" href="../myBagPage.html">
+                <img src="../images/myBagIcon.png">
+                <p>My Bag</p>
+            </div>
+        </div>
+    </div>
+    <div class="searchBar" id="searchBar">
+        <form>
+            <input class="searchInput" placeholder="Search an item here" type="search" value="" id="search">
+        </form>
+    </div> 
+        <div class="smallContainer singleProduct" id="singleProductContainer">
+            <div class="row">
+                <div class="col-2">
+                    <img src=../images/blocks1.webp id="productImg">      
+                </div>
+                <div class="col-2">
+                    <p>Home / Blocks</p>
+                    <h1>Warrior Block</h1>
+                    <h4>$15</h4>
+                    <select id="productSize">
+                        <option>One Size</option>
+                    </select>
+                    <div id="pleaseSelectSize"></div>
+                    <input type="number" value="1" min="1" id="productAmount">
+                        <button id="addToCartBtn" class="addToCartBtn">Add to Bag</button>
+                        <h3>Product Details<i class="fa fa-indent"></i></h3>
+                        <br>
+                        <p>Uplifting yoga block. Lightweight, small size and with just the right level of firmness for a perfect yoga session.</p>
+                </div>
+            </div>
+        </div> 
+    <div class="footer">
+        <div class="footerInfo">
+            <p>Receive exclusive promotions, private sales and news</p>
+            <input type="email" placeholder="Email" name="email" id="emailSubscription" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$" required>
+        </div>
+        <div class="subscribeBtn">
+            <button type="button" class="footerSubscription" id=footerSubscriptionBtn>Subscribe</button>
+        </div>
+    
+        <div class="footerBtns">
+            <a class="footerItem" id="footerAboutUsBtn" href="../footerPages/aboutUsPage.html">About Us</a>
+            <a class="footerItem" id="footerHelpBtn" href="../footerPages/helpPage.html">Help</a>
+            <a class="footerItem" id="footerContactBtn" href="../footerPages/contactPage.html">Contact</a>
+        </div>
+    </div>
+    </body><script type="module" defer src="./sproduct.js"></script>
+<script type="module" defer src="../searchPage/searchPage.js"></script>
+<script type="module" defer src="../homePage/homePage.js"></script>
+                    </html> 

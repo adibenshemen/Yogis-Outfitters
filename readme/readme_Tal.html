@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../home.css">
+    <title>Tal's Read Me</title>
+    <link rel="icon" href="../images/siteIcon.png" type="image/icon type">
+</head>
+
+<body>
+<div class="header">
+    <div class="menu">
+        <div class="dropdown">
+            <div class="menuItem" id="newInBtn">New In
+                <div class="dropdown-content">
+                    <a id="headerAllCat">All Categories</a>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="menuItem" id="clothingBtn">Clothing
+                <div class="dropdown-content">
+                    <a id="headerTops" href="../productsPages/productsPage_Tops.html">Tops</a>
+                    <a id="headerBras" href="../productsPages/productsPage_Bras.html">Bras</a>
+                    <a id="headerBottoms" href="../productsPages/productsPage_Bottoms.html">Bottoms</a>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="menuItem" id="essentialsBtn">Essentials
+                <div class="dropdown-content">
+                    <a id="headerMats" href="../productsPages/productsPage_Mats.html">Yoga Mats</a>
+                    <a id="headerBlocks" href="../productsPages/productsPage_Blocks.html">Yoga Blocks</a>
+                    <a id="headerBags" href="../productsPages/productsPage_Bags.html">Bags</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <img src="../images/Logo1.png" id="MainLogo" onclick="location.href='../homePage/homePage.html';">
+
+    <div class="headerIcons">
+        <div class="headerBtn" id="searchBtn" >
+            <img src="../images/searchIcon.png">
+            <p>Search</p>
+        </div>
+        <div class="headerBtn" id="logInBtn" href="../usersLoginPages/loginPage.html">
+            <img src="../images/logInIcon.png">
+            <p>Log In</p>
+            <div class="dropdown-content">
+                <a id="logOutBtn">Log Out</a>
+            </div>
+        </div>
+        <div class="headerBtn" id="myBagBtn" href="../myBagPage.html">
+            <img src="../images/myBagIcon.png">
+            <p>My Bag</p>
+        </div>
+    </div>
+</div>
+<div class="searchBar" id="searchBar">
+    <form>
+        <input class="searchInput" placeholder="Search an item here" type="search" value="" id="search">
+    </form>
+</div>
+
+<br><br><br><br><br><br><br><br><br>
+<h2>Tal Barak</h2><br>
+<div class="readmeContainer">
+    <p>Store name: Yogis Outfitters<br><br>
+        What are we selling: Yoga clothes and essentials<br><br>
+        Additional pages we added to our online store:<br><br>
+        1. About Us - telling about our brand.<br><br>
+        2. Help - FAQ (frequently asked questions) about our store.<br><br>
+        3. Contact Us - let users tell us what they think about our online store, contact with our team if they need and we can get back to them by email.<br><br>
+        4. Products pages - we added a page for each product in our store, showing it’s name, description, price, available sizes and add to bag button, together with amount of pieces to choose.<br><br>
+        What was hard to do? <br><br>
+        In this course I’ve learned javascript for the first time, so the whole project was quite challenging for me. Google and me became best friends, so I think that the most challenging part in the
+        project was understanding how everything works, for example how the client side and server side communicate with each other. Also understanding how to work with files, how to read, write and save
+        data in json files. Making tests was also hard, because I had to figure out how to do tests that required me to be logged in. In addition, I’ve encountered some bugs that at first I wasn’t sure
+        why it happens, until I realized the importance of Asynchronous functions, and now I can say that I deeply understand where to add async/await.<br><br>
+        My partner was Adi Ben Shemen 204841621.<br><br>
+        Adi and I worked together the whole time. At first Adi was leading the frontend side and I was leading the backend side (because I was really enthusiastic about working with files, and doing the admin part).
+        Together we figured out how to create dynamic pages - which was at first challenging, but today, after learning so much - I can debug easily things that do not work,
+        and understand how to fix it.<br><br>
+        The different routes our app supports:<br><br>
+        1. Reaching admin pages only if you’re logged in as admin.<br><br>
+        2. Reaching pages that require you to be logged in (My Bag, Checkout) only when you’re logged in.<br><br>
+        3. In My Bag page, manage to increase/decrease the amount of the wanted products.<br><br>
+        4. Creating dynamic pages: products pages and single product pages, my bag page, searching results pages, etc.<br><br>
+        5. Adding and removing products from admin page<br><br>
+        6. Searching for users in admin page<br><br>
+        7. Register and login only with right credentials (register only if the email doesn’t exist already)<br><br>
+        8. Subscribe with email - save emails in json file<br><br>
+        9. Send contact message - and save it in json file<br><br>
+        10. Logout - different cases if you were logged in or not<br><br>
+        11. Remove members, subscribers and contact us messages (it was useful for the tests - but in general it’s good to have the option to do that)
+
+
+</div>
+
+<div class="footer">
+    <div class="footerInfo">
+        <p>Receive exclusive promotions, private sales and news</p>
+        <input type="email" placeholder="Email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$" required>
+    </div>
+    <div class="subscribeBtn">
+        <button type="button" class="footerSubscription" id=footerSubscriptionBtn>Subscribe</button>
+    </div>
+
+    <div class="footerBtns">
+        <a class="footerItem" id="footerAboutUsBtn" href="../footerPages/aboutUsPage.html">About Us</a>
+        <a class="footerItem" id="footerHelpBtn" href="../footerPages/helpPage.html">Help</a>
+        <a class="footerItem" id="footerContactBtn" href="../footerPages/contactPage.html">Contact</a>
+    </div>
+</div>
+</body>
+<script type="module" src="../homePage/homePage.js"></script>
+<script type="module" src="../searchPage/searchPage.js"></script>
+<script type="module" src="../shoppingBag/shoppingBag.js"></script>
+</html>
